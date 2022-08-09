@@ -232,7 +232,7 @@ h6 {
 
 .descript-wrapper {
   background: #8D7370;
-  margin: -104px 0px 65px 0px;
+  margin: -104px 0px 0px 0px;
 }
 
 .descript-counter__container {
@@ -261,4 +261,100 @@ h6 {
   line-height: 37px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.partfolio {
+  background: #EFE6E4;
+}
+
+.partfolio__title {
+  padding: 65px 0px 40px 0px;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #533738;
+}
+
+.partfolio__more {
+  padding: 40px 0px 65px 0px;
+  text-align: center;
+  background: url("../img/partfolio/Arrow.svg") 65% 41% no-repeat;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.partfolio__more:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.partfolio__more-text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #533738;
+}
+
+.grid-partfolio1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 488px) minmax(300px, 692px);
+      grid-template-columns: minmax(200px, 488px) minmax(300px, 692px);
+  -ms-grid-rows: minmax(200px, 451px);
+      grid-template-rows: minmax(200px, 451px);
+  gap: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.grid-partfolio1__block1 {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.grid-partfolio1__block1:hover .grid-partfolio1__text {
+  -webkit-transform: scale(1.09);
+      -ms-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.grid-partfolio1__text {
+  position: absolute;
+  top: 86px;
+  left: 35px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.grid-partfolio1__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 277px;
+  text-align: center;
+  margin: 0px 0px 25px 74px;
+}
+
+.grid-partfolio1__subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #FFFFFF;
+  max-width: 418px;
+}
+
+.grid-partfolio2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 692px) minmax(200px, 488px);
+      grid-template-columns: minmax(300px, 692px) minmax(200px, 488px);
+  -ms-grid-rows: minmax(200px, 451px);
+      grid-template-rows: minmax(200px, 451px);
+  gap: 20px;
 }
