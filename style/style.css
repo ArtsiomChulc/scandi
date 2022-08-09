@@ -1,0 +1,264 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  font-weight: 400;
+}
+
+html {
+  font-size: 16px;
+  /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1066px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+[class*="--wide"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.nav-header {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+.nav-header__container--wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 38px 0px 91px 0px;
+}
+
+.nav-header__logo {
+  margin: 0px 89px 0px 0px;
+  line-height: 20px;
+  color: #533738;
+}
+
+.nav-header__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-header__item:not(:last-child) {
+  margin: 0px 26px 0px 0px;
+}
+
+.nav-header__item a {
+  line-height: 20px;
+  font-size: calc(12px + 4 * (100vw / 1400));
+  color: #533738;
+}
+
+.nav-header__item::after {
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #533738;
+  display: block;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.nav-header__item:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 1177.8px) {
+  .nav-header__item {
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+.header {
+  background: url("../img/header/bc.png") 0 0/cover no-repeat;
+  padding: 165px 0px 0px 0px;
+}
+
+.header__content {
+  max-width: 534px;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: calc(32px + 18 * (100vw / 1400));
+  line-height: 62px;
+  color: #533738;
+  margin: 0px 0px 24px 0px;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  color: #533738;
+  max-width: 493.5px;
+  margin: 0px 0px 21px 0px;
+}
+
+.header__btn {
+  margin: 0px 0px 168px 0px;
+}
+
+.button {
+  background: #CC8B86;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #533738;
+  padding: 24px 70px;
+}
+
+.about {
+  background: #EFE6E4;
+}
+
+.about__title {
+  font-size: calc(18px + 22 * (100vw / 1400));
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #533738;
+  text-align: center;
+  padding: 65px 0px 40px 0px;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 444.5px;
+          flex: 0 1 444.5px;
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0px 56% 0px;
+}
+
+.about__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 528px;
+          flex: 0 1 528px;
+}
+
+.about__text {
+  font-size: 18px;
+  font-size: calc(12px + 6 * (100vw / 1460));
+  line-height: 1.67;
+  color: #533738;
+}
+
+.descript-wrapper {
+  background: #8D7370;
+  margin: -104px 0px 65px 0px;
+}
+
+.descript-counter__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 83px 15px;
+}
+
+.descript-counter__number {
+  font-size: calc(32px + 18 * (100vw / 1400));
+  line-height: 1.24;
+  color: #FFFFFF;
+  margin: 0px 0px 8px 0px;
+}
+
+.descript-counter__text {
+  font-weight: 500;
+  font-size: calc(24px + 6 * (100vw / 1400));
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
