@@ -1,0 +1,39 @@
+.footer {
+    background: #EFE6E4;
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        padding: 35px 0px 35px 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        
+    }
+
+    // .footer__tel
+
+    &__tel {
+        & a {
+            color: #533738;
+        }
+    }
+
+    // .footer__name
+
+    &__name {
+        margin-left: 42px;
+        & a {
+            color: #533738;
+        }
+    }
+
+    // .footer__site
+
+    &__site {
+        margin-left: auto;
+        & a {
+            color: #533738;
+        }
+    }
+}
