@@ -39,6 +39,46 @@
         &:hover {
             transform: scale(1.1);
         }
+        @media (max-width: 1120px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 67% 41% no-repeat;
+        }
+        @media (max-width: 1060px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 68% 41% no-repeat;
+        }
+        @media (max-width: 977px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 70% 41% no-repeat;
+        }
+        @media (max-width: 900px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 72% 41% no-repeat;
+        }
+        @media (max-width: 860px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 74% 41% no-repeat;
+        }
+        @media (max-width: 740px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 76% 41% no-repeat;
+        }
+        @media (max-width: 670px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 79% 41% no-repeat;
+        }
+        @media (max-width: 620px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 83% 41% no-repeat;
+        }
+        @media (max-width: 547px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 86% 41% no-repeat;
+        }
+        @media (max-width: 520px)
+         {
+            background: url('../img/partfolio/Arrow.svg') 94% 41% no-repeat;
+        }
     }
 
     // .partfolio__more-text
@@ -53,40 +93,69 @@
 
 
 .grid-partfolio1 {
-    display: grid;
-    grid-template-columns: repeat(12, 82px);
-    column-gap: 20px;
+    // display: grid;
+    // grid-template-columns: repeat(12, 82px);
+    // column-gap: 20px;
+    // row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     row-gap: 30px;
 
-    // .grid-partfolio1__block1
+    &__wrap-flex1 {
+        flex: 0 1 451px;
+        display: flex;
+        column-gap: 20px;
+        flex-wrap: wrap;
+    }
 
+
+    // .grid-partfolio1__block1
+    
     &__block1 {
-        grid-column-start: span 5;
+        // grid-column-start: span 5;
+    }
+    &__image-1 {
+
+    }
+
+    &__image {
+        max-width: 100%;
     }
 
 
     // .grid-partfolio1__block2
 
     &__block2 {
-        grid-column-start: span 7;
+        // grid-column-start: span 7;
     }
+
+    &__wrap-flex2 {
+        flex: 0 1 451px;
+        display: flex;
+        column-gap: 20px;
+        flex-wrap: wrap;
+    }
+
 
     // .grid-partfolio1__block3
 
     &__block3 {
-        grid-column-start: span 7;
+        // grid-column-start: span 7;
     }
 
     // .grid-partfolio1__block4
 
     &__block4 {
-        grid-column-start: span 5;
+        // grid-column-start: span 5;
     }
 }
 
 .prompt {
+    display: flex;
     overflow: hidden;
     position: relative;
+    height: 451px;
     cursor: pointer;
     &:hover .prompt__text {
         opacity: 1;
@@ -137,4 +206,7 @@
         transition: left .9s ease;
         transition-delay: .7s;
     }
+}
+.rel {
+    position: relative;
 }

@@ -34,15 +34,13 @@
 		&__img {
             // flex: 1 1 253px;
             max-width: 320px;
-            position: relative;
+            
             overflow: hidden;
-            padding: 0px 0px 72% 0px;
-            font-size: 0;
+            
+            
             & img {
                 max-width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
+                
                 object-fit: cover;
                 font-size: 0;
             }

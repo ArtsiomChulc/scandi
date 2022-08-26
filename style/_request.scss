@@ -2,8 +2,9 @@
     background: #8D7370;
     // .request__container
 
-    &__container {
+    &__container--map {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         column-gap: 20px;
     }
@@ -11,7 +12,9 @@
     // .request__form
 
     &__form {
-        flex: 0 1 50%;
+        flex: 0 1 508px;
+        margin-left: 71px;
+        // padding-left: 10px;
     }
 
     // .request__title
