@@ -67,7 +67,11 @@
 
     &__map {
         flex: 0 1 590px;
-    
+        @media (max-width: 786.8px) {
+            max-width: 300px;
+            max-height: 300px;
+            margin: 15px auto;
+        }
     }
 }
 .input {
