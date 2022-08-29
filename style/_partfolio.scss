@@ -31,7 +31,7 @@
     // .partfolio__more
 
     &__more {
-        padding: 40px 0px 65px 0px;
+        padding: 40px 100px 65px 0px;
         text-align: center;
         background: url('../img/partfolio/Arrow.svg') 65% 41% no-repeat;
         cursor: pointer;
@@ -39,45 +39,14 @@
         &:hover {
             transform: scale(1.1);
         }
-        @media (max-width: 1120px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 67% 41% no-repeat;
+        @media (max-width: 649.8px) {
+            padding-right: 115px;
         }
-        @media (max-width: 1060px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 68% 41% no-repeat;
+        @media (max-width: 532.8px) {
+            padding-right: 125px;
         }
-        @media (max-width: 977px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 70% 41% no-repeat;
-        }
-        @media (max-width: 900px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 72% 41% no-repeat;
-        }
-        @media (max-width: 860px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 74% 41% no-repeat;
-        }
-        @media (max-width: 740px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 76% 41% no-repeat;
-        }
-        @media (max-width: 670px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 79% 41% no-repeat;
-        }
-        @media (max-width: 620px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 83% 41% no-repeat;
-        }
-        @media (max-width: 547px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 86% 41% no-repeat;
-        }
-        @media (max-width: 520px)
-         {
-            background: url('../img/partfolio/Arrow.svg') 94% 41% no-repeat;
+        @media (max-width: 489.8px) {
+            padding-right: 135px;
         }
     }
 
@@ -85,11 +54,12 @@
 
     &__more-text {
         font-weight: 500;
-        font-size: 30px;
+        // font-size: 30px;
+        font-size: calc(18px + 12 * (100vw / 1230)); 
         line-height: 37px;
         color: #533738;
     }
-}
+
 
 
 .grid-partfolio1 {
@@ -113,7 +83,9 @@
     // .grid-partfolio1__block1
     
     &__block1 {
-        // grid-column-start: span 5;
+        @media (max-width: 1229.98px) {
+            margin-bottom: 20px;
+        }
     }
     &__image-1 {
 
@@ -136,26 +108,19 @@
         column-gap: 20px;
         flex-wrap: wrap;
     }
-
-
-    // .grid-partfolio1__block3
-
     &__block3 {
-        // grid-column-start: span 7;
+        @media (max-width: 1229.98px) {
+            margin-bottom: 20px;
+        }
     }
 
-    // .grid-partfolio1__block4
 
-    &__block4 {
-        // grid-column-start: span 5;
-    }
 }
 
 .prompt {
     display: flex;
     overflow: hidden;
     position: relative;
-    height: 451px;
     cursor: pointer;
     &:hover .prompt__text {
         opacity: 1;
@@ -209,4 +174,5 @@
 }
 .rel {
     position: relative;
+}
 }
